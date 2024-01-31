@@ -39,7 +39,7 @@
         <p>Par exemple, vous pouvez ajouter des liens vers d'autres pages :</p>
         <a href="/login">gerer rapport</a>
         <span> ou </span>
-        <a href="/inscription"> Creer rapport</a>
+        <a href="/rapports"> Creer rapport</a>
     </div>
 </body>
 </html>

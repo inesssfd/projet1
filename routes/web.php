@@ -1,7 +1,7 @@
 <?php
 use App\Http\Controllers\VisiteurController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RapportController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +23,10 @@ Route::get('/connexion', [VisiteurController::class, 'showLoginForm'])->name('lo
 Route::post('/connexion',  [VisiteurController::class, 'login'])->name('login');
 Route::get('/acceuil', function () {
     return view('acceuil');
-});
+})->name('acceuil');
+Route::get('/rapports', [RapportController::class, 'create'])->name('rapport.create');
+Route::post('/rapports', [RapportController::class, 'store'])->name('rapport.store');
+
+
 
 
